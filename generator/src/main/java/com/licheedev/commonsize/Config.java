@@ -19,9 +19,9 @@ public class Config {
     public static final String REPLACE_REG = "{reg}";
     public static final String REPLACE_VALUE = "{value}";
     public static final String DIMEN_DP_LINE =
-        "<dimen name=\"" + REPLACE_REG + "\">" + REPLACE_VALUE + "dp</dimen>";
+            "<dimen name=\"" + REPLACE_REG + "\">" + REPLACE_VALUE + "dp</dimen>";
     public static final String DIMEN_SP_LINE =
-        "<dimen name=\"" + REPLACE_REG + "\">" + REPLACE_VALUE + "sp</dimen>";
+            "<dimen name=\"" + REPLACE_REG + "\">" + REPLACE_VALUE + "sp</dimen>";
 
     public static final String RESOURCES_START = "<resources>";
     public static final String RESOURCES_END = "</resources>";
@@ -43,7 +43,6 @@ public class Config {
     public boolean justDelete;
 
     public Config(File configPropertiesFile) {
-
         Properties properties = new Properties();
         try {
             FileInputStream input = new FileInputStream(configPropertiesFile);
@@ -81,8 +80,8 @@ public class Config {
         return sb.toString();
     }
 
-    public static ArrayList<Integer> parseSwList(File file) {
-        ArrayList<Integer> sizes = new ArrayList<>();
+    public static List<Integer> parseSwList(File file) {
+        List<Integer> sizes = new ArrayList<>();
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader(file));

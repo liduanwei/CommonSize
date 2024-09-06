@@ -1,6 +1,4 @@
 include ':app'
 include ':generator'
-include ':common_size_w750_n1000'
-include ':common_size_w750_n1334'
 include ':common_size_w1080_n1920'
-include ':common_size_w1080_n1080'
+include ':common_size_w1920_n1080'

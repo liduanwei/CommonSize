@@ -58,9 +58,9 @@ public class FileUtil {
 
             fi = new FileInputStream(src);
             fo = new FileOutputStream(dest);
-            in = fi.getChannel();//寰楀埌瀵瑰簲鐨勬枃浠堕�氶亾
-            out = fo.getChannel();//寰楀埌瀵瑰簲鐨勬枃浠堕�氶亾
-            in.transferTo(0, in.size(), out);//杩炴帴涓や釜閫氶亾锛屽苟涓斾粠in閫氶亾璇诲彇锛岀劧鍚庡啓鍏ut閫氶亾  
+            in = fi.getChannel();//得到对应的文件通道
+            out = fo.getChannel();//得到对应的文件通道
+            in.transferTo(0, in.size(), out);//连接两个通道，并且从in通道读取，然后写入out通道  
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

@@ -19,20 +19,20 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="@dimen/normal_745dp"
+        android:layout_width="@dimen/normal_1920dp"
         android:layout_height="@dimen/normal_100dp"
         android:background="#37a42d"
         android:gravity="center"
-        android:text="common_size_745dp"
+        android:text="common_size_1920dp"
         android:textSize="@dimen/normal_36sp"
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="@dimen/normal_750dp"
+        android:layout_width="@dimen/normal_1080dp"
         android:layout_height="@dimen/normal_100dp"
         android:background="#2e9ed2"
         android:gravity="center"
-        android:text="common_size_750dp"
+        android:text="common_size_1080dp"
         android:textSize="@dimen/normal_36sp"
         android:textStyle="bold" />
 

@@ -94,14 +94,14 @@ public class Generator {
     }
 
     private void writeContent(OutputConfig outputConfig, File file, String dimenReg, int smallLest,
-        boolean negative) {
+                              boolean negative) {
         StringBuilder sb = new StringBuilder();
         sb.append(Config.XML_HEAD).append("\n").append(Config.RESOURCES_START).append("\n");
 
         // 0 的时候
         sb.append(mConfig.intent)
-            .append(dimenReg.replace("{x}", "" + 0).replace("{value}", "" + 0))
-            .append("\n");
+                .append(dimenReg.replace("{x}", "" + 0).replace("{value}", "" + 0))
+                .append("\n");
 
         // 最关键的步骤，就是算出 参考屏幕上每单位，对应屏幕上多少dp
         //float per = smallLest / (float) outputConfig.designWidth;
@@ -121,12 +121,12 @@ public class Generator {
 
             if (negative) {
                 sb.append(mConfig.intent)
-                    .append(dimenReg.replace("{x}", "" + i).replace("{value}", "-" + value))
-                    .append("\n");
+                        .append(dimenReg.replace("{x}", "" + i).replace("{value}", "-" + value))
+                        .append("\n");
             } else {
                 sb.append(mConfig.intent)
-                    .append(dimenReg.replace("{x}", "" + i).replace("{value}", "" + value))
-                    .append("\n");
+                        .append(dimenReg.replace("{x}", "" + i).replace("{value}", "" + value))
+                        .append("\n");
             }
         }
         sb.append(Config.RESOURCES_END).append("\n");
